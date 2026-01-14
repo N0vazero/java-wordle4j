@@ -1,0 +1,5 @@
+Wed Jan 14 22:32:02 MSK 2026
+C:\Java\java-wordle4jwords_ru.txt (Не удается найти указанный файл)
+ru.yandex.practicum.WordsPreparer.loadFromFile(WordsPreparer.java:29)
+ru.yandex.practicum.WordsPreparer.getDictionary(WordsPreparer.java:64)
+ru.yandex.practicum.Main.main(Main.java:11)
