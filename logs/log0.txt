@@ -1,0 +1,5 @@
+Wed Jan 14 20:50:41 MSK 2026
+\data\words_ru.txt (Системе не удается найти указанный путь)
+ru.yandex.practicum.WordsPreparer.loadFromFile(WordsPreparer.java:28)
+ru.yandex.practicum.WordsPreparer.getDictionary(WordsPreparer.java:63)
+ru.yandex.practicum.Main.main(Main.java:11)
