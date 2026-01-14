@@ -51,7 +51,9 @@ public class GameProcess {
             turns--;
             print(turnsRemainsMessage + turns);
         }
-        if (!win) { print(loseMessage + targetWord); }
+        if (!win) {
+            print(loseMessage + targetWord);
+        }
 
     }
 
