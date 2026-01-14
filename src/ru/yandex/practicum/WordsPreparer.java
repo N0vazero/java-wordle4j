@@ -12,12 +12,13 @@ import java.util.LinkedList;
 
 public class WordsPreparer {
     private static String dir = System.getProperty("user.dir");
-    private static Path dirWordsFile = Paths.get(dir + "\\words_ru.txt");
+    private static Path dirWordsFile = Paths.get(dir + "/words_ru.txt");
 
     private static LinkedList<String> loadFromFile() {
 
         LinkedList<String> words = new LinkedList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(dirWordsFile.toString(), StandardCharsets.UTF_8))) {
+        System.out.println(dirWordsFile);
             while (reader.ready()) {
                 String line = reader.readLine();
                 if (notVoid(line)) {
