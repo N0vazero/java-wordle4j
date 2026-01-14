@@ -28,6 +28,7 @@ public class GameProcess {
 
     public void game() {
         targetWord = getRandomWord();
+        boolean win = false;
         int turns = 6;
         print(getGreeting());
         while (turns > 0) {
@@ -39,6 +40,7 @@ public class GameProcess {
             if (checkContains(word)) {
                 if (compareWords(word, targetWord)) {
                     print(getCongratulation());
+                    win = true;
                     break;
                 }
                 print(getTip(word));
@@ -49,7 +51,7 @@ public class GameProcess {
             turns--;
             print(turnsRemainsMessage + turns);
         }
-        print(loseMessage + targetWord);
+        if (!win) { print(loseMessage + targetWord); }
 
     }
 
